@@ -1,0 +1,78 @@
+
+
+/*Normalize html and body elements,this style is just good to have*/
+html,body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a.brand-logo{
+    margin-left: 5px;
+}
+
+nav {
+    background-color: #2196f3;
+}
+
+img.food-img {
+    object-fit: cover;
+    width: 200px;
+    height: 300px;
+}
+
+
+h1 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+div.chip{
+    margin-left: 20px;
+}
+div.card-title{
+    margin-left: 10px;
+}
+div.ingredient-list{
+    margin-left: 30px;
+}
+
+p.source {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+p.info {
+    margin-top:0px;
+    margin-left: 20px;
+}
+
+img.star {
+    width: 30px;
+    cursor: pointer;
+}
+
+div.row.recipe-body {
+    max-width: 1200px;
+}
+div.row.recipe-header{
+    max-width: 1200px;
+    margin-top: 40px;
+}
+
+div.row
+
+h2 {
+    font-size: 28px;
+}
+
+div.col.ingredient-list {
+    padding-left: 15px;
+    padding-right:15px;
+    margin-left: 20px;
+}
