@@ -23,20 +23,39 @@ $(document).ready(function() {
    localStorage.setItem('recipes', JSON.stringify(recipes));
 
    for (let j = 0; j < recipes.length; j++) {
-    let recipeCard = $(`<div id=${j} class="col s2 recipe-card"><div class="card">
+
+
+    let recipeCard = $(`
+<div id=${j} class="col s2 recipe-card"><div class="card">
         <div id=${j} class="card-image">
           <img id=${j} src=${recipes[j].image}>
         </div>
         <div id=${j} class="card-content">
           <p id=${j}>${recipes[j].label}</p>
         </div>
-      </div></div>`);
+      </div></div>
+
+
+<div id=${j} class="col s2 recipe-card">
+<div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class = "activator" id=${j} src=${recipes[j].image}>
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><p id=${j}>${recipes[j].label}</p><i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><p id=${j}>${recipes[j].label}</p><i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>`);
     $('.recipe-results').append(recipeCard);
    }
    $('.loading-container').remove();
    $('.recipe-card').click(function(e) {
     localStorage.setItem('recipeIndex', e.target.id);
-    window.location.href = 'recipe.html';
+    //window.location.href = 'recipe.html';
    })
 
   })
